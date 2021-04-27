@@ -13,7 +13,7 @@ body {
 
 .hidden {
   position: absolute;
-  left: -999999;
+  left: -1000000px;
   width: 1px;
   height: 1px;
   opacity: 0;
@@ -232,6 +232,11 @@ body {
   margin: 0 auto;
 }
 
+.button-product:hover {
+  color: #fff;
+  background-color: #F26376;
+}
+
 .advantages {
   margin-top: 95px;
   padding: 103px 0;
@@ -380,18 +385,59 @@ body {
   color: #FBFBFB;
 }
 
-.hidden {
-  display: block;
-  position: absolute;
-  left: -1vw;
-  opacity: 0;
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.social-link {
+  color: #000000;
+  text-decoration: none;
+  font-size: 20px;
+  background-color: #FFFFFF;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  width: 15px;
+  height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*  display: inline-block; */
+}
+
+.social-link:hover {
+  color: #FFFFFF;
+  background-color: #F16D7F;
+}
+
+.icon {
+  padding: 10px;
+  fill: #F16D7F;
+}
+
+.icon:hover {
+  fill: #000;
+  background-color: grey;
 }
 
 .catalog-heading {
   background: #F1E4E6;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.catalog-heading .container {
+.catalog-heading .heading-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -401,8 +447,6 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .catalog-title {
@@ -413,6 +457,8 @@ body {
 }
 
 .second-navmenu a {
+  font-weight: 400;
+  font-size: 17px;
   color: #636363;
 }
 
@@ -431,7 +477,7 @@ body {
 }
 
 .product-filter .filter-left {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 17px;
 }
 
@@ -500,5 +546,203 @@ body {
   font-weight: 300;
   font-size: 19px;
   color: #C4C4C4;
+}
+
+.central-poster {
+  min-height: 777px;
+  border: 1px solid #eaeaea;
+  background-color: #f7f7f7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.poster-button-left {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 47px;
+  height: 47px;
+  left: 0;
+  top: 50%;
+  background-color: rgba(42, 42, 42, 0.15);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+}
+
+.poster-button-left:hover {
+  color: #F16D7F;
+}
+
+.poster-button-right {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 47px;
+  height: 47px;
+  right: 0;
+  top: 50%;
+  background-color: rgba(42, 42, 42, 0.15);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+}
+
+.poster-button-right:hover {
+  color: #F16D7F;
+}
+
+.women-collection {
+  position: relative;
+  margin-top: -85px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 600px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  margin-bottom: 119px;
+}
+
+.women-collection-content {
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
+}
+
+.women-collection-title {
+  text-align: center;
+  margin-top: 73px;
+  color: #f16d7f;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.women-collection-underline {
+  text-align: center;
+}
+
+.women-collection-brand {
+  margin: 12px 0 48px 0;
+  text-align: center;
+  color: #4D4D4D;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.women-collection-description {
+  color: #5E5E5E;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  margin-bottom: 48px;
+  padding: 0px 44px;
+}
+
+.women-collection-line {
+  width: 641px;
+  text-align: center;
+  border-bottom: 1px solid #EAEAEA;
+}
+
+.women-collection-price {
+  display: block;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  color: #EF5B70;
+  padding-bottom: 65px;
+}
+
+.clothing-parameters {
+  -ms-flex-preferred-size: 625px;
+      flex-basis: 625px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clothing-parameters-wrap {
+  color: #6F6E6E;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.img-clothing-arrow {
+  padding: 0 20px;
+}
+
+.add-to-cart {
+  background-color: #ffffff;
+  position: relative;
+  -ms-flex-preferred-size: 530px;
+      flex-basis: 530px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.add-to-cart-button {
+  display: block;
+  width: 240px;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  color: #F26376;
+  text-align: center;
+  padding: 10px 25px;
+  border: 1px solid #F26376;
+  margin: 0 auto;
+  fill: #F26376;
+}
+
+.add-to-cart-button .cart-product {
+  margin-right: 23px;
+}
+
+.add-to-cart-button:hover {
+  color: #FFFFFF;
+  background-color: #F16D7F;
+  fill: #fff;
 }
 /*# sourceMappingURL=style.css.map */
